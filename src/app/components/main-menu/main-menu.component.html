@@ -1,0 +1,45 @@
+<app-login-modal [(visible)]="showLoginDialog"></app-login-modal>
+<app-register-model [(visible)]="showRegisterDialog"></app-register-model>
+
+
+<div style="background-color: #10a3dd !important;">
+<!--Navbar-->
+<mdb-navbar  SideClass="navbar navbar-1 navbar-light lighten-2" [containerInside]="false" >
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand >
+    <a class="navbar-brand">
+      Welecome to Smart-Home Web Application !
+    </a>
+  </mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links >
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link waves-light" (click)="openHome();" mdbWavesEffect>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect (click)="openLoginDialog();">Login</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link waves-light" mdbWavesEffect (click)="openRegisterDialog();">Register</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect (click)="openFitness();">Fitness</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect (click)="openAutoWater();">Auto Watering</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect (click)="openSeriesAndMovies();">Series and Movies</a>
+      </li>
+    </ul>
+    <!-- Links -->
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+</div>

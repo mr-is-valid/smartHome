@@ -1,0 +1,31 @@
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+
+.category{
+  height: 300px;
+  width:  300px;
+  transition: 0.3s;
+  background-color: brown;
+  border-top-left-radius: 25px;
+  border-top-right-radius:  25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+
+.category:hover{
+  height: 310px;
+  width:  310px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.2),
+              0px 5px 10px 10px rgba(0, 0, 0, 0.15);
+}
+

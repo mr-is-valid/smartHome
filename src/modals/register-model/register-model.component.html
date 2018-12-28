@@ -1,0 +1,36 @@
+
+
+<div [@dialog] *ngIf="visible" class="dialog" >
+
+    <div class="login">
+        <mat-form-field class="example-full-width" style="text-align: right">
+          <input matInput  placeholder="שם משתמש" [(ngModel)]="userName">
+        </mat-form-field>
+  
+        <mat-form-field class="example-full-width" style="text-align: right">
+          <input type="password" matInput  placeholder="סיסמא" [(ngModel)]="password">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" style="text-align: right">
+            <input type="password" matInput  placeholder="וודא סיסמא" [(ngModel)]="passwordConfirm">
+        </mat-form-field>
+
+        <div class="datepicker">
+            <mat-form-field class="datepicker" style="text-align: right; width: 183px;" >
+            <input matInput [matDatepicker]="picker" (dateChange)="birthDateValidation()" 
+                   [(ngModel)]="birthDate" placeholder="תאריך לידה">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+        </div>
+
+        <mat-form-field class="example-full-width" style="text-align: right">
+            <input type="text" matInput  placeholder="אימייל" [(ngModel)]="email">
+        </mat-form-field>
+
+        <button class="btn btn-success" (click)="usernameValidation()">Send</button>
+    </div>
+  
+    <button *ngIf="closable" (click)="close()" aria-label="Close" class="dialog__close-btn">X</button>
+  </div>
+  

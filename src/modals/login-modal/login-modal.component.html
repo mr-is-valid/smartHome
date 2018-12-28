@@ -1,0 +1,18 @@
+
+
+<div [@dialog] *ngIf="visible" class="dialog" >
+
+  <div class="login">
+      <mat-form-field class="example-full-width" style="text-align: right">
+        <input matInput  placeholder="שם משתמש" [(ngModel)]="userName">
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" style="text-align: right">
+        <input type="password" matInput  placeholder="סיסמא" [(ngModel)]="password">
+      </mat-form-field>
+
+      <button class="btn btn-success" (click)="send()">Send</button>
+  </div>
+
+  <button *ngIf="closable" (click)="close()" aria-label="Close" class="dialog__close-btn">X</button>
+</div>

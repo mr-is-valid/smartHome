@@ -1,0 +1,15 @@
+
+.timeOrder{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.timeScale{
+    text-align: center;
+    width: 60px;
+}
+
+p{
+    display: inline;
+}
